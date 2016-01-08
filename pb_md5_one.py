@@ -1,3 +1,18 @@
+"""Convert to and from Roman numerals"""
+
+__author__ = "Yinjia Wang @(TBC)"
+__version__ = "1.1"
+__date__ = "8 August 2015"
+__copyright__ = """Copyright (c) 2015 Tianjin Biochip Corp.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the Python 2.1.1 license, available at
+http://www.python.org/2.1.1/license.html
+
+The UPDATE version can be found here:
+https://github.com/WenchaoLin/pbCheck
+"""
+
 import sys,os
 if len(sys.argv)!=2:
     print "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
