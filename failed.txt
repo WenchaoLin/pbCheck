@@ -1,0 +1,1 @@
+/Rawdata/pacbio_data/TBC/Run227_20150607_247/E03_1 : fasta or fastq missing!!

@@ -73,7 +73,13 @@ of raw Pacbio RSII data. the unconsistence Cells will print into [failed.txt].
                         n+=1
         run_mul.close()
     os.system("sh /tmp/"+time_n+".sh 2> /dev/null &")
-
+    print "jobs submitted, all files with erros will recored in failed.txt"
+    while 1:
+        print "["+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())+"]\tplease wait..."
+        time.sleep(30)
+        if os.path.exists('failed.txt'):
+            print "["+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())+"]\tAll done!!"
+            break
 
 if __name__ == '__main__':
     main()

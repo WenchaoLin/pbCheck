@@ -56,19 +56,19 @@ for md5_line in md5_list :
         print "OK\t"+md5_line[1]
     else:
         print "FAIL\t"+md5_line[1]
-        fail_all_w=open("Fail.out",'a')
+        fail_all_w=open("failed.txt",'a')
         fail_all_w.write(md5_line[1]+" md5 error \n")
         fail_all_w.close()
 
 if fasta_num!=6:
-    fail_all_w=open("Fail.out",'a')
+    fail_all_w=open("failed.txt",'a')
     fail_all_w.write(sys.argv[1]+" : fasta or fastq missing!!\n")
     fail_all_w.close()
 if h5_num!=5:
-    fail_all_w=open("Fail.out",'a')
+    fail_all_w=open("failed.txt",'a')
     fail_all_w.write(sys.argv[1]+" : h5 md5 checksum failed, transfer incomplete!!\n")
     fail_all_w.close()
 if xml_num!=5:
-    fail_all_w=open("Fail.out",'a')
+    fail_all_w=open("failed.txt",'a')
     fail_all_w.write(sys.argv[1]+" : xml md5 checksum failed, transfer incomplete!!\n")
     fail_all_w.close()
